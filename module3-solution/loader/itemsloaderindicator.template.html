@@ -1,0 +1,9 @@
+<div class="loader"></div>
+<ul>
+  <li ng-repeat="item in cntrl.items">
+    {{ item.name }}, ({{ item.short_name }}) - ({{ item.description }})
+   <button ng-click="cntrl.onRemove({index: $index})">Don't want this one!</button>
+  </li>
+</ul>
+<div class="error" ng-if="cntrl.noItmesFound()"> Nothing found </div>
+
