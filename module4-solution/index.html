@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <title>Resturant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+<body>
+ <div class="container">
+  <ui-view></ui-view>
+ </div>
+ <script src="//code.angularjs.org/1.6.0-rc.2/angular.min.js" type="text/javascript"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+ 
+ <script src="menuapp.module.js" type="text/javascript"></script>
+ <script src="data.module.js" type="text/javascript"></script>
+ 
+ <script src="menudata.service.js" type="text/javascript"></script>
+
+ <script src="categories.component.js" type="text/javascript"></script>
+ <script src="categories.controller.js" type="text/javascript"></script>
+ <script src="items.controller.js" type="text/javascript"></script>
+ <script src="items.component.js" type="text/javascript"></script>
+ 
+  <script src="routes.js" type="text/javascript"></script>
+</body>
+</html>
